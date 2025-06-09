@@ -1,0 +1,46 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Rider/JetBrains
+.idea/
+*.DotSettings.user
+
+# Logs / temp files
+*.log
+*.tmp
+*.bak
+
+# Test results / coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+artifacts/
+
+# Entity Framework / Migrations cache
+*.dbmdl
+Migrations/
+
+# dotnet-specific
+project.lock.json
+project.fragment.lock.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
