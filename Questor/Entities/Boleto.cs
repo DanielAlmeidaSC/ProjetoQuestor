@@ -2,7 +2,7 @@
 using Flunt.Validations;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Contracts;
+using System.Globalization;
 
 namespace Questor.Entities
 {
@@ -22,15 +22,29 @@ namespace Questor.Entities
         public string Observacao{ get; set; }
         public int BancoId { get; set; }
 
-        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, DateTime dataVencimento, string observacao, int bancoId)
+        public Boleto()
+        {
+            
+        }
+        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, string dataVencimento, string observacao, int bancoId)
         {
             NomePagador = nomePagador;
             CpfCnpjPagador = cpfCnpjPagador;
             NomeBeneficiario = nomeBeneficiario;
             CpfCnpjBeneficiario = cpfCnpjBeneficiario;
             Valor = valor;
-            DataVencimento = dataVencimento;
+            DataVencimento = DateTime.ParseExact(dataVencimento, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             Observacao = observacao;
+            BancoId = bancoId;
+
+            if (!DateTime.TryParseExact(dataVencimento, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+            {
+                AddNotification("DataVencimento", "A data de vencimento está em um formato inválido. Use dd/MM/yyyy");
+            }
+            else
+            {
+                DataVencimento = parsedDate;
+            }
 
             var contract = new Contract<Boleto>()
                 .Requires()
@@ -38,7 +52,8 @@ namespace Questor.Entities
                 .IsNotNullOrEmpty(NomeBeneficiario, "NomeBeneficiario", "O nome do beneficiário é um requisito obrigatório e não pode ficar vazio ou nulo!")
                 .IsNotNullOrEmpty(CpfCnpjPagador, "CPF/CNPJPagador", "O CPF/CNPJ do pagador é um requisito obrigatório e não pode ficar vazio ou nulo!")
                 .IsNotNullOrEmpty(CpfCnpjBeneficiario, "CPF/CNPJBeneficiario", "O CPF/CNPJ do beneficiário é um requisito obrigatório e não pode ficar vazio ou nulo!")
-                .IsGreaterThan(Valor, 0.0, "Valor", "O valor do boleto é um requisito obrigatório e deve ser maior que R$ 0,00");
+                .IsGreaterThan(Valor, 0.0, "Valor", "O valor do boleto é um requisito obrigatório e deve ser maior que R$ 0,00")
+                .IsGreaterThan(BancoId, 0, "BancoId", "O Id do banco é um requisito obrigatório e deve ser maior que 0");
 
             AddNotifications(contract);
         }

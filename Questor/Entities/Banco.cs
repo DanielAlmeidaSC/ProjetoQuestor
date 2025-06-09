@@ -15,6 +15,10 @@ namespace Questor.Entities
         public int CodigoBanco { get; set; }
         public int PercentualJuros { get; set; }
 
+        public Banco()
+        {
+            
+        }
         public Banco(int id, string nome, int codigoBanco, int percentualJuros)
         {
             Id = id;
