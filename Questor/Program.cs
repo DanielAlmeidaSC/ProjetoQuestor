@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Questor.Database;
+using Questor.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,5 +18,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapMethods(BancoPost.Caminho, BancoPost.Metodo, BancoPost.Comportamento);
+app.MapMethods(BoletoPost.Caminho, BoletoPost.Metodo, BoletoPost.Comportamento);
+
 
 app.Run();

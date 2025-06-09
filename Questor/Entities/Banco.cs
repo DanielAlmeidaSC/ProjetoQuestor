@@ -13,19 +13,23 @@ namespace Questor.Entities
         public int Id { get; set; }
         public string Nome { get; set; }
         public int CodigoBanco { get; set; }
-        public int PercentualJuros { get; set; }
+        public decimal PercentualJuros { get; set; }
 
         public Banco()
         {
             
         }
-        public Banco(int id, string nome, int codigoBanco, int percentualJuros)
+        public Banco(int id, string nome, int codigoBanco, decimal percentualJuros)
         {
             Id = id;
             Nome = nome;
             CodigoBanco = codigoBanco;
-            PercentualJuros = percentualJuros/100;
+            PercentualJuros = percentualJuros;
 
+        }
+
+        public void Validar()
+        {
             var contract = new Contract<Banco>()
                 .Requires()
                 .IsNotNullOrEmpty(Nome, "Nome", "O nome do banco é um requisito obrigatório e não pode ficar vazio ou nulo!")
