@@ -22,7 +22,7 @@ namespace Questor.Entities
         public string Observacao{ get; set; }
         public int BancoId { get; set; }
 
-        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, DateTime dataVencimento, string observacao int bancoId)
+        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, DateTime dataVencimento, string observacao, int bancoId)
         {
             NomePagador = nomePagador;
             CpfCnpjPagador = cpfCnpjPagador;
