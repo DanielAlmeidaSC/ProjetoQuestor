@@ -10,13 +10,13 @@ namespace Questor.Endpoints
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
         public static Delegate Comportamento => Action;
 
-        public static async Task<IResult> Action(Banco bancoInsert, ApplicationDbContext db)
+        public static async Task<IResult> Action(BancoDTO bancoDTO, ApplicationDbContext db)
         {
             Banco banco = new Banco
             {
-                Nome = bancoInsert.Nome,
-                CodigoBanco = bancoInsert.CodigoBanco,
-                PercentualJuros = bancoInsert.PercentualJuros
+                Nome = bancoDTO.Nome,
+                CodigoBanco = bancoDTO.CodigoBanco,
+                PercentualJuros = bancoDTO.PercentualJuros
             };
             banco.Validar();
 
@@ -29,16 +29,23 @@ namespace Questor.Endpoints
                 return Results.ValidationProblem(erro);
             }
 
-            var codigoBanco = await db.Banco.AnyAsync(b => b.Id == banco.CodigoBanco);
+            var codigoBanco = await db.Banco.AnyAsync(b => b.Id == banco.Id);
             if (codigoBanco)
             {
                 return Results.BadRequest("Erro! Código de banco já existente dentro do banco de dados!");
             }
 
+            if (banco.PercentualJuros > 100)
+            {
+                return Results.BadRequest("A taxa de juros não pode ser maior que 100%! Revise as políticas pré estabelecidas!");
+            }
             await db.Banco.AddAsync(banco);
             await db.SaveChangesAsync();
 
             return Results.Created($"/bancos/{banco.Id}", banco.Id);
         }
+
+
+        public record BancoDTO(string Nome, int CodigoBanco, double PercentualJuros);
     }
 }

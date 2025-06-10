@@ -13,13 +13,13 @@ namespace Questor.Entities
         public int Id { get; set; }
         public string Nome { get; set; }
         public int CodigoBanco { get; set; }
-        public decimal PercentualJuros { get; set; }
+        public double PercentualJuros { get; set; }
 
         public Banco()
         {
-            
+
         }
-        public Banco(int id, string nome, int codigoBanco, decimal percentualJuros)
+        public Banco(int id, string nome, int codigoBanco, double percentualJuros)
         {
             Id = id;
             Nome = nome;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Questor.Database;
 using Questor.Entities;
+using System.Drawing;
 
 namespace Questor.Endpoints
 {
@@ -10,19 +11,19 @@ namespace Questor.Endpoints
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
         public static Delegate Comportamento => Action;
 
-        public static async Task<IResult> Action(Boleto boletoInsert, ApplicationDbContext db)
+        public static async Task<IResult> Action(BoletoDTO boletoDTO, ApplicationDbContext db)
         {
             Boleto boleto = new Boleto
             {
-                NomePagador = boletoInsert.NomePagador,
-                NomeBeneficiario = boletoInsert.NomeBeneficiario,
-                CpfCnpjPagador = boletoInsert.CpfCnpjPagador,
-                CpfCnpjBeneficiario = boletoInsert.CpfCnpjBeneficiario,
-                Valor = boletoInsert.Valor,
-                DataVencimento = boletoInsert.DataVencimento,
-                Observacao = boletoInsert.Observacao,
-                BancoId = boletoInsert.BancoId
-                
+                NomePagador = boletoDTO.NomePagador,
+                NomeBeneficiario = boletoDTO.NomeBeneficiario,
+                CpfCnpjPagador = boletoDTO.CpfCnpjPagador,
+                CpfCnpjBeneficiario = boletoDTO.CpfCnpjBeneficiario,
+                Valor = boletoDTO.Valor,
+                DataVencimento = boletoDTO.DataVencimento,
+                Observacao = boletoDTO.Observacao,
+                BancoId = boletoDTO.BancoId
+
             };
 
             boleto.Validar();
@@ -50,5 +51,6 @@ namespace Questor.Endpoints
 
             return Results.Created($"/boletos/{boleto.Id}", boleto.Id);
         }
+        public record BoletoDTO(string NomePagador, string NomeBeneficiario, string CpfCnpjPagador, string CpfCnpjBeneficiario, double Valor, DateTime DataVencimento, string Observacao, int BancoId);
     }
 }

@@ -16,7 +16,6 @@ namespace Questor.Entities
         public string CpfCnpjPagador { get; set; }
         public string NomeBeneficiario { get; set; }
         public string CpfCnpjBeneficiario { get; set; }
-
         public double Valor { get; set; }
         public DateTime DataVencimento { get; set; }
         public string Observacao { get; set; }
@@ -27,24 +26,24 @@ namespace Questor.Entities
         {
 
         }
-        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, string dataVencimento, string observacao, int bancoId)
+        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, DateTime dataVencimento, string observacao, int bancoId)
         {
             NomePagador = nomePagador;
             CpfCnpjPagador = cpfCnpjPagador;
             NomeBeneficiario = nomeBeneficiario;
             CpfCnpjBeneficiario = cpfCnpjBeneficiario;
             Valor = valor;
-            DataVencimento = DateTime.ParseExact(dataVencimento, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            DataVencimento = dataVencimento;
             Observacao = observacao;
             BancoId = bancoId;
 
-            if (!DateTime.TryParseExact(dataVencimento, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+            if (dataVencimento == default(DateTime))
             {
-                AddNotification("DataVencimento", "A data de vencimento está em um formato inválido. Use dd/MM/yyyy");
+                AddNotification("DataVencimento", "A Data de vencimento precisa ser preenchida!");
             }
             else
             {
-                DataVencimento = DateTime.SpecifyKind(parsedDate, DateTimeKind.Utc);
+                DataVencimento = DateTime.SpecifyKind(dataVencimento, DateTimeKind.Utc);
             }
         }
 
