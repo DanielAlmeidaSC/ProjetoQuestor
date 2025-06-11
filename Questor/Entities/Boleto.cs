@@ -47,6 +47,10 @@ namespace Questor.Entities
             }
         }
 
+        public Boleto(int id, string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, double valor, DateTime dataVencimento, string observacao, int bancoId) : this(nomePagador, cpfCnpjPagador, nomeBeneficiario, cpfCnpjBeneficiario, valor, dataVencimento, observacao, bancoId)
+        {
+            Id = id;
+        }
         public void Validar()
         {
             var contract = new Contract<Boleto>()

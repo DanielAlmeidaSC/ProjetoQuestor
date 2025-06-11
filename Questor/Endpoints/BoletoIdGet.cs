@@ -15,6 +15,7 @@ namespace Questor.Endpoints
         {
             BoletoDTO boleto = await db.Boleto.Where(b => b.Id == id)
                 .Select(b => new BoletoDTO(
+                    b.Id,
                     b.NomePagador,
                     b.CpfCnpjPagador,
                     b.NomeBeneficiario,
@@ -50,7 +51,7 @@ namespace Questor.Endpoints
 
         }
 
-        public record BoletoDTO(string NomePagador, string CpfCnpjPagador, string NomeBeneficiario, string CpfCnpjBeneficiario, double Valor, DateTime DataVencimento, string Observacao, int BancoId);
+        public record BoletoDTO(int Id, string NomePagador, string CpfCnpjPagador, string NomeBeneficiario, string CpfCnpjBeneficiario, double Valor, DateTime DataVencimento, string Observacao, int BancoId);
 
     }
 }

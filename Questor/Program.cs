@@ -28,7 +28,7 @@ if (app.Environment.IsDevelopment())
     {
         options.DocumentTitle = "Documentação da API Questor - Avaliação";
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Questor API v1");
-        options.RoutePrefix = ""; 
+        options.RoutePrefix = "swagger"; 
         options.DisplayRequestDuration(); 
 
     });
@@ -50,6 +50,9 @@ app.MapMethods(IdBancoGet.Caminho, IdBancoGet.Metodo, IdBancoGet.Comportamento)
 
 app.MapMethods(BoletoIdGet.Caminho, BoletoIdGet.Metodo, BoletoIdGet.Comportamento)
     .WithTags("Boleto por Id");
+
+app.MapMethods(TodosBoletosGet.Caminho, TodosBoletosGet.Metodo, TodosBoletosGet.Comportamento)
+    .WithTags("Todos os boletos");
 
 
 app.Run();

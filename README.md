@@ -22,6 +22,7 @@ API para gerenciamento de bancos, juros e boletos, desenvolvida com ASP.NET Core
 * Consultar banco por ID (GET)
 * Criar banco (POST)
 * Consultar boletos à partir de ID (GET)
+* Consultar todos os boletos (GET)
 * Criar boleto (POST)
 * Documentação da API via Swagger
 
@@ -77,10 +78,10 @@ http://localhost:7006/
 
 ## 📄 Documentação
 
-A documentação interativa da API está disponível via Swagger UI na raiz da aplicação:
+A documentação interativa da API está disponível via Swagger UI em:
 
 ```
-http://localhost:7006/
+http://localhost:7006/swagger
 ```
 
 ---
