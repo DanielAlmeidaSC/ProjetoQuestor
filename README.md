@@ -22,7 +22,6 @@ API para gerenciamento de bancos, juros e boletos, desenvolvida com ASP.NET Core
 * Consultar banco por ID (GET)
 * Criar banco (POST)
 * Consultar boletos à partir de ID (GET)
-* Consultar todos os boletos - Bônus (GET)
 * Criar boleto (POST)
 * Documentação da API via Swagger
 

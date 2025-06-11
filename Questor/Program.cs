@@ -51,8 +51,5 @@ app.MapMethods(IdBancoGet.Caminho, IdBancoGet.Metodo, IdBancoGet.Comportamento)
 app.MapMethods(BoletoIdGet.Caminho, BoletoIdGet.Metodo, BoletoIdGet.Comportamento)
     .WithTags("Boleto por Id");
 
-app.MapMethods(TodosBoletosGet.Caminho, TodosBoletosGet.Metodo, TodosBoletosGet.Comportamento)
-    .WithTags("Todos os boletos");
-
 
 app.Run();
