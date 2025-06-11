@@ -9,9 +9,9 @@ namespace Questor.Endpoints
     {
         public static string Caminho => "/boletos";
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
-        public static Delegate Comportamento => Action;
+        public static Func<BoletoDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Action(BoletoDTO boletoDTO, ApplicationDbContext db)
+        public static async Task<IResult> Acao(BoletoDTO boletoDTO, ApplicationDbContext db)
         {
             Boleto boleto = new Boleto
             {

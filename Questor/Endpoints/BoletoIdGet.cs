@@ -9,9 +9,9 @@ namespace Questor.Endpoints
     {
         public static string Caminho => "/boletos/{id}";
         public static string[] Metodo => new string[] { HttpMethod.Get.ToString() };
-        public static Delegate Comportamento => Action;
+        public static Func<int, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Action(int id, ApplicationDbContext db)
+        public static async Task<IResult> Acao(int id, ApplicationDbContext db)
         {
             BoletoDTO boleto = await db.Boleto.Where(b => b.Id == id)
                 .Select(b => new BoletoDTO(

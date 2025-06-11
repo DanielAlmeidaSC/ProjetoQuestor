@@ -8,9 +8,9 @@ namespace Questor.Endpoints
     {
         public static string Caminho => "/bancos";
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
-        public static Delegate Comportamento => Action;
+        public static Func<BancoDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Action(BancoDTO bancoDTO, ApplicationDbContext db)
+        public static async Task<IResult> Acao (BancoDTO bancoDTO, ApplicationDbContext db)
         {
             Banco banco = new Banco
             {
