@@ -54,8 +54,7 @@
               "RelativeToolTip": "Endpoints\\TodosBancosGet.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA5wBQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:23:46.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:23:46.707Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Endpoints\\IdBancoGet.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwCAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:21:23.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:21:23.491Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "Endpoints\\BoletoPost.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAkwBYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:09:49.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:09:49.94Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Endpoints\\BoletoIdGet.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAkwDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T19:58:10.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T19:58:10.522Z"
             },
             {
               "$type": "Document",
@@ -118,8 +114,7 @@
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\Questor.csproj",
               "RelativeToolTip": "Questor.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-12T17:56:52.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T17:56:52.643Z"
             },
             {
               "$type": "Document",
@@ -131,8 +126,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:03:04.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T20:03:04.477Z"
             },
             {
               "$type": "Document",
@@ -144,8 +138,7 @@
               "RelativeToolTip": "Entities\\Boleto.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAUwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:02:57.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T20:02:57.565Z"
             }
           ]
         }
