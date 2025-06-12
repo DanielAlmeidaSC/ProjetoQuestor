@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Questor.Database;
-using Questor.DTOs;
 using Questor.Entities;
 using System.Drawing;
 
@@ -14,8 +13,8 @@ namespace Questor.Endpoints
 
         public static async Task<IResult> Acao(int id, ApplicationDbContext db)
         {
-            BoletoGetDTO boleto = await db.Boleto.Where(b => b.Id == id)
-                .Select(b => new BoletoGetDTO(
+            BoletoDTO boleto = await db.Boleto.Where(b => b.Id == id)
+                .Select(b => new BoletoDTO(
                     b.Id,
                     b.NomePagador,
                     b.CpfCnpjPagador,
@@ -43,7 +42,7 @@ namespace Questor.Endpoints
 
                 double juros = banco.PercentualJuros / 100;
 
-                BoletoGetDTO boletoAtualizado = boleto with { Valor = boleto.Valor * (1 + juros) };
+                BoletoDTO boletoAtualizado = boleto with { Valor = boleto.Valor * (1 + juros) };
 
                 return Results.Ok(boletoAtualizado);
             }
@@ -51,5 +50,8 @@ namespace Questor.Endpoints
             return Results.Ok(boleto);
 
         }
+
+        public record BoletoDTO(int Id, string NomePagador, string CpfCnpjPagador, string NomeBeneficiario, string CpfCnpjBeneficiario, double Valor, DateTime DataVencimento, string Observacao, int BancoId);
+
     }
 }

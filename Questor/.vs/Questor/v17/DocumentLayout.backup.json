@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\ProjetoQuestor\\Questor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\todosboletosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\todosboletosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\boletoidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,32 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Title": "TodosBoletosGet.cs",
+              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\TodosBoletosGet.cs",
+              "RelativeDocumentMoniker": "Endpoints\\TodosBoletosGet.cs",
+              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\TodosBoletosGet.cs*",
+              "RelativeToolTip": "Endpoints\\TodosBoletosGet.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA6wBUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:03:04.477Z",
+              "WhenOpened": "2025-06-11T19:58:43.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Boleto.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Entities\\Boleto.cs",
-              "RelativeDocumentMoniker": "Entities\\Boleto.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Entities\\Boleto.cs",
-              "RelativeToolTip": "Entities\\Boleto.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAmwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:02:57.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "BoletoIdGet.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoIdGet.cs",
               "RelativeDocumentMoniker": "Endpoints\\BoletoIdGet.cs",

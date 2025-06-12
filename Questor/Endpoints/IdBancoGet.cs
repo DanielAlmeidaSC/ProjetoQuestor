@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Questor.Database;
-using Questor.DTOs;
 using Questor.Entities;
 
 namespace Questor.Endpoints
@@ -13,8 +12,8 @@ namespace Questor.Endpoints
 
         public static async Task<IResult> Acao(int id, ApplicationDbContext db)
         {
-            BancoIdGetDTO banco = await db.Banco.Where(b => b.Id == id)
-                .Select(b => new BancoIdGetDTO(
+            BancoIdDTO banco = await db.Banco.Where(b => b.Id == id)
+                .Select(b => new BancoIdDTO(
                         b.Id,
                         b.Nome,
                         b.CodigoBanco,
@@ -28,5 +27,8 @@ namespace Questor.Endpoints
             }
             return Results.Ok(banco);
         }
+        public record BancoIdDTO(int Id, string Nome, int CodigoBanco, double PercentualJuros);
+
+
     }
 }
