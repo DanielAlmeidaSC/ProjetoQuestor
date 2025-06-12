@@ -11,7 +11,7 @@ API para gerenciamento de bancos, juros e boletos, desenvolvida com ASP.NET Core
 * Entity Framework Core
 * PostgreSQL
 * Swashbuckle (Swagger)
-* C# 6
+* C# 10
 * Microsoft Visual Studio 2022
 
 ---
