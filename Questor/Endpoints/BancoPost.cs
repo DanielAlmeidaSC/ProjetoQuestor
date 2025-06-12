@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Questor.Database;
+using Questor.DTOs;
 using Questor.Entities;
 
 namespace Questor.Endpoints
@@ -8,9 +9,9 @@ namespace Questor.Endpoints
     {
         public static string Caminho => "/bancos";
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
-        public static Func<BancoDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
+        public static Func<BancoPostDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Acao (BancoDTO bancoDTO, ApplicationDbContext db)
+        public static async Task<IResult> Acao (BancoPostDTO bancoDTO, ApplicationDbContext db)
         {
             Banco banco = new Banco
             {
@@ -44,8 +45,5 @@ namespace Questor.Endpoints
 
             return Results.Created($"/bancos/{banco.Id}", banco.Id);
         }
-
-
-        public record BancoDTO(string Nome, int CodigoBanco, double PercentualJuros);
     }
 }

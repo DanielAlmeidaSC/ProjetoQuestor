@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Questor.Database;
+using Questor.DTOs;
 using Questor.Entities;
 using System.Drawing;
 
@@ -9,9 +10,9 @@ namespace Questor.Endpoints
     {
         public static string Caminho => "/boletos";
         public static string[] Metodo => new string[] { HttpMethod.Post.ToString() };
-        public static Func<BoletoDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
+        public static Func<BoletoPostDTO, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Acao(BoletoDTO boletoDTO, ApplicationDbContext db)
+        public static async Task<IResult> Acao(BoletoPostDTO boletoDTO, ApplicationDbContext db)
         {
             Boleto boleto = new Boleto
             {
@@ -51,6 +52,5 @@ namespace Questor.Endpoints
 
             return Results.Created($"/boletos/{boleto.Id}", boleto.Id);
         }
-        public record BoletoDTO(string NomePagador, string NomeBeneficiario, string CpfCnpjPagador, string CpfCnpjBeneficiario, double Valor, DateTime DataVencimento, string Observacao, int BancoId);
     }
 }
