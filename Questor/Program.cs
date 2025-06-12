@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Questor.Database;
+using Questor.DTOs;
 using Questor.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,19 +38,29 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapMethods(BancoPost.Caminho, BancoPost.Metodo, BancoPost.Comportamento)
-    .WithTags("Banco Post");
+    .WithTags("Banco Post")
+     .Accepts<BancoPostDTO>("application/json")
+     .Produces(StatusCodes.Status201Created); 
 
 app.MapMethods(BoletoPost.Caminho, BoletoPost.Metodo, BoletoPost.Comportamento)
-    .WithTags("Boleto Post");
+    .WithTags("Boleto Post")
+     .Accepts<BoletoPostDTO>("application/json")
+     .Produces(StatusCodes.Status201Created); 
 
 app.MapMethods(TodosBancosGet.Caminho, TodosBancosGet.Metodo, TodosBancosGet.Comportamento)
-    .WithTags("Todos os Bancos");
+    .WithTags("Todos os Bancos")
+    .Produces<List<BancoGetDTO>>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status404NotFound); ;
 
 app.MapMethods(IdBancoGet.Caminho, IdBancoGet.Metodo, IdBancoGet.Comportamento)
-    .WithTags("Banco por Id");
+    .WithTags("Banco por Id")
+    .Produces<BancoGetDTO>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status404NotFound); ; ;
 
 app.MapMethods(BoletoIdGet.Caminho, BoletoIdGet.Metodo, BoletoIdGet.Comportamento)
-    .WithTags("Boleto por Id");
+    .WithTags("Boleto por Id")
+    .Produces<BoletoGetDTO>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status404NotFound);
 
 
 app.Run();

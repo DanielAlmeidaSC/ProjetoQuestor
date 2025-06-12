@@ -7,13 +7,13 @@ namespace Questor.Endpoints
 {
     public class IdBancoGet
     {
-        public static string Caminho => "/bancos/{id}";
+        public static string Caminho => "/bancos/{codigoBanco}";
         public static string[] Metodo => new string[] { HttpMethod.Get.ToString() };
         public static Func<int, ApplicationDbContext, Task<IResult>> Comportamento => Acao;
 
-        public static async Task<IResult> Acao(int id, ApplicationDbContext db)
+        public static async Task<IResult> Acao(int codigoBanco, ApplicationDbContext db)
         {
-            BancoGetDTO banco = await db.Banco.Where(b => b.Id == id)
+            BancoGetDTO banco = await db.Banco.Where(b => b.CodigoBanco == codigoBanco)
                 .Select(b => new BancoGetDTO(
                         b.Id,
                         b.Nome,

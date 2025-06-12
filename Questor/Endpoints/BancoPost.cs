@@ -30,7 +30,7 @@ namespace Questor.Endpoints
                 return Results.ValidationProblem(erro);
             }
 
-            var codigoBanco = await db.Banco.AnyAsync(b => b.Id == banco.Id);
+            var codigoBanco = await db.Banco.AnyAsync(b => b.CodigoBanco == banco.CodigoBanco);
             if (codigoBanco)
             {
                 return Results.BadRequest("Erro! Código de banco já existente dentro do banco de dados!");
