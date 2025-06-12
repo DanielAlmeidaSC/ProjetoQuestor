@@ -1,6 +1,4 @@
-﻿using Questor.Entities;
-
-namespace Questor.DTOs
+﻿namespace Questor.DTOs
 {
     public record BoletoGetDTO
     {
