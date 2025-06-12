@@ -11,7 +11,6 @@ namespace Questor.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         public string NomePagador { get; set; }
         public string CpfCnpjPagador { get; set; }
         public string NomeBeneficiario { get; set; }

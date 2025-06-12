@@ -25,9 +25,7 @@ namespace Questor.Entities
             Nome = nome;
             CodigoBanco = codigoBanco;
             PercentualJuros = percentualJuros;
-
         }
-
         public void Validar()
         {
             var contract = new Contract<Banco>()
