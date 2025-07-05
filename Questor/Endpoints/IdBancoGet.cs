@@ -24,7 +24,7 @@ namespace Questor.Endpoints
 
             if (banco == null)
             {
-                return Results.NotFound("Não foi encontrado nenhum banco com o Id informado!");
+                return Results.NotFound("Não foi encontrado nenhum banco com o código informado!");
             }
             return Results.Ok(banco);
         }

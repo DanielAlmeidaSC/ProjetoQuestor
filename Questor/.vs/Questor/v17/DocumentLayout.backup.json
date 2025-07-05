@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\ProjetoQuestor\\Questor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\todosbancosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\todosbancosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\boletopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\boletopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\boletoidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\boletoidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\dtos\\boletogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:dtos\\boletogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\idbancoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\idbancoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\bancopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\bancopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:dtos\\bancopostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\idbancoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\idbancoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\dtos\\bancogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:dtos\\bancogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\dtos\\boletogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:dtos\\boletogetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\entities\\banco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,22 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\dtos\\boletopostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:dtos\\boletopostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\boletopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\boletopost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\boletoidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\boletoidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\endpoints\\todosbancosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:endpoints\\todosbancosget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|d:\\projetoquestor\\questor\\entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A7DF7EF-079D-4AEB-A9D2-BE6251B1478B}|Questor.csproj|solutionrelative:entities\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,50 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T19:33:34.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Banco.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Entities\\Banco.cs",
-              "RelativeDocumentMoniker": "Entities\\Banco.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Entities\\Banco.cs",
-              "RelativeToolTip": "Entities\\Banco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:59:15.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IdBancoGet.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\IdBancoGet.cs",
-              "RelativeDocumentMoniker": "Endpoints\\IdBancoGet.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\IdBancoGet.cs",
-              "RelativeToolTip": "Endpoints\\IdBancoGet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:58:23.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "BancoGetDTO.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\DTOs\\BancoGetDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\BancoGetDTO.cs",
@@ -109,12 +70,11 @@
               "RelativeToolTip": "DTOs\\BancoGetDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:56:06.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:56:06.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "BancoPostDTO.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\DTOs\\BancoPostDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\BancoPostDTO.cs",
@@ -122,37 +82,36 @@
               "RelativeToolTip": "DTOs\\BancoPostDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:51:27.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:51:27.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "TodosBancosGet.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\TodosBancosGet.cs",
               "RelativeDocumentMoniker": "Endpoints\\TodosBancosGet.cs",
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\TodosBancosGet.cs",
               "RelativeToolTip": "Endpoints\\TodosBancosGet.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:58:26.089Z"
+              "WhenOpened": "2025-06-12T18:58:26.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "BancoPost.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BancoPost.cs",
               "RelativeDocumentMoniker": "Endpoints\\BancoPost.cs",
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BancoPost.cs",
               "RelativeToolTip": "Endpoints\\BancoPost.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:50:17.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:50:17.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "BoletoPostDTO.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\DTOs\\BoletoPostDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\BoletoPostDTO.cs",
@@ -164,52 +123,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "BoletoGetDTO.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\DTOs\\BoletoGetDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\BoletoGetDTO.cs",
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\DTOs\\BoletoGetDTO.cs",
               "RelativeToolTip": "DTOs\\BoletoGetDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T19:01:08.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T19:01:08.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BoletoPost.cs",
-              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoPost.cs",
-              "RelativeDocumentMoniker": "Endpoints\\BoletoPost.cs",
-              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoPost.cs",
-              "RelativeToolTip": "Endpoints\\BoletoPost.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA6wBUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T19:08:07.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Boleto.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Entities\\Boleto.cs",
               "RelativeDocumentMoniker": "Entities\\Boleto.cs",
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\Entities\\Boleto.cs",
               "RelativeToolTip": "Entities\\Boleto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T18:59:18.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "BoletoPost.cs",
+              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoPost.cs",
+              "RelativeDocumentMoniker": "Endpoints\\BoletoPost.cs",
+              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoPost.cs",
+              "RelativeToolTip": "Endpoints\\BoletoPost.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:08:07.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BoletoIdGet.cs",
               "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoIdGet.cs",
               "RelativeDocumentMoniker": "Endpoints\\BoletoIdGet.cs",
               "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\BoletoIdGet.cs",
               "RelativeToolTip": "Endpoints\\BoletoIdGet.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwBMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T19:00:44.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IdBancoGet.cs",
+              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Endpoints\\IdBancoGet.cs",
+              "RelativeDocumentMoniker": "Endpoints\\IdBancoGet.cs",
+              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Endpoints\\IdBancoGet.cs",
+              "RelativeToolTip": "Endpoints\\IdBancoGet.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T18:58:23.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Banco.cs",
+              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Entities\\Banco.cs",
+              "RelativeDocumentMoniker": "Entities\\Banco.cs",
+              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Entities\\Banco.cs",
+              "RelativeToolTip": "Entities\\Banco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T18:59:15.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProjetoQuestor\\Questor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ProjetoQuestor\\Questor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:33:34.744Z"
             }
           ]
         }
