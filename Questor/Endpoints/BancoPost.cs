@@ -43,7 +43,7 @@ namespace Questor.Endpoints
             await db.Banco.AddAsync(banco);
             await db.SaveChangesAsync();
 
-            return Results.Created($"/bancos/{banco.Id}", banco.Id);
+            return Results.Created($"/bancos/{banco.Id}", new BancoGetDTO(banco.Id, banco.Nome, banco.CodigoBanco, banco.PercentualJuros));
         }
 
     }

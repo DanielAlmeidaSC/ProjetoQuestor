@@ -50,7 +50,7 @@ namespace Questor.Endpoints
             await db.Boleto.AddAsync(boleto);
             await db.SaveChangesAsync();
 
-            return Results.Created($"/boletos/{boleto.Id}", boleto.Id);
+            return Results.Created($"/boletos/{boleto.Id}", new BoletoGetDTO(boleto.Id, boleto.NomePagador, boleto.CpfCnpjPagador, boleto.NomeBeneficiario, boleto.CpfCnpjBeneficiario, boleto.Valor, boleto.DataVencimento, boleto.Observacao, boleto.BancoId));
         }
     }
 }
